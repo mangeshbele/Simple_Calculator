@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/download"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="180dp"
+        android:layout_height="31dp"
+        android:text="@string/enter_first_number"
+        android:textAlignment="viewStart"
+        android:textColor="#B9BFE3"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.075" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="176dp"
+        android:layout_height="32dp"
+        android:text="@string/enter_second_number"
+        android:textAlignment="viewStart"
+        android:textColor="#C8D7F1"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.155" />
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="166dp"
+        android:layout_height="48dp"
+        android:autofillHints="Enter Number1"
+        android:labelFor="@id/num1"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.795"
+        app:layout_constraintStart_toEndOf="@+id/textView1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.052"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="167dp"
+        android:layout_height="48dp"
+        android:autofillHints="Enter Number2"
+        android:labelFor="@id/num2"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.82"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.136"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#026837"
+        android:text="@string/add"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/subBtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.437" />
+
+    <Button
+        android:id="@+id/subBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#8A3535"
+        android:text="@string/sub"
+        android:textColor="#090909"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/mulBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/addBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.437"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/mulBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#A6979C"
+        android:text="@string/mul"
+        android:textColor="#111112"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/divBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/subBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.437"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/divBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1CA6A6"
+        android:text="@string/div"
+        android:textColor="#100F0F"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/mulBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.437"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="155dp"
+        android:layout_height="36dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/result"
+        android:textAlignment="center"
+        android:textColor="#A1F1CA"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/show_result"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.251" />
+
+    <EditText
+        android:id="@+id/show_result"
+        android:layout_width="145dp"
+        android:layout_height="49dp"
+        android:backgroundTint="#4F870F"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textAlignment="textStart"
+        android:textColor="#79C39F"
+        android:textCursorDrawable="@android:drawable/button_onoff_indicator_on"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.236"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/clearBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#8C7005"
+        android:text="@string/clear"
+        android:textColor="#212121"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.576" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
